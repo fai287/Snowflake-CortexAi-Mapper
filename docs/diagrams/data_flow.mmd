@@ -1,0 +1,23 @@
+%% Editable Mermaid source for the end-to-end data flow.
+%% Render: https://mermaid.live  or  `mmdc -i data_flow.mmd -o data_flow.png`
+flowchart LR
+    subgraph Brokers
+      A[Broker Alpha · CSV]
+      B[Broker Beta · JSON]
+      C[Broker Gamma · pipe-delimited]
+    end
+
+    A & B & C -->|native formats| K{{Apache Kafka}}
+    K -->|insurance.policies.raw| SS[Snowpipe Streaming client]
+    K -->|insurance.claims.raw| SS
+
+    SS --> RAW[(RAW · VARIANT)]
+    RAW -->|sp_raw_to_staging + Cortex header mapping| STG[(STAGING · canonical)]
+    STG -->|sp_run_data_quality| GOV[(GOVERNANCE · DQ audit)]
+    STG -->|sp_cortex_enrichment| STG
+    STG -->|sp_staging_to_analytics| AN[(ANALYTICS · star schema)]
+    AN -->|sp_anomaly_detection| AN
+    AN --> SEM[(SEMANTIC · business views)]
+    SEM --> DASH[Streamlit Dashboard]
+    SEM --> AGENT[AI Agent · NL to SQL]
+    GOV --> DASH

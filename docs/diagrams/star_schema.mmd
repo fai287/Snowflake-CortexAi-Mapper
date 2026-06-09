@@ -1,0 +1,48 @@
+%% ANALYTICS star schema (conformed dimensions + facts).
+erDiagram
+    DIM_BROKER   ||--o{ DIM_POLICY  : "broker_key"
+    DIM_CUSTOMER ||--o{ DIM_POLICY  : "customer_key"
+    DIM_PRODUCT  ||--o{ DIM_POLICY  : "product_key"
+    DIM_POLICY   ||--o{ FACT_PREMIUM: "policy_key"
+    DIM_POLICY   ||--o{ FACT_CLAIM  : "policy_key"
+    DIM_BROKER   ||--o{ FACT_CLAIM  : "broker_key"
+    DIM_CUSTOMER ||--o{ FACT_CLAIM  : "customer_key"
+
+    DIM_BROKER {
+      int    broker_key PK
+      string broker_code
+      string broker_name
+    }
+    DIM_CUSTOMER {
+      int    customer_key PK
+      string customer_id
+      string customer_segment
+      string risk_tier
+    }
+    DIM_PRODUCT {
+      int    product_key PK
+      string product_line
+    }
+    DIM_POLICY {
+      int     policy_key PK
+      string  policy_number
+      number  premium_amount
+      number  sum_insured
+      date    effective_date
+      date    expiry_date
+      float   anomaly_score
+    }
+    FACT_PREMIUM {
+      int    premium_key PK
+      int    policy_key FK
+      number premium_amount
+    }
+    FACT_CLAIM {
+      int    claim_key PK
+      string claim_number
+      int    policy_key FK
+      number claim_amount
+      string claim_status
+      float  sentiment_score
+      float  anomaly_score
+    }

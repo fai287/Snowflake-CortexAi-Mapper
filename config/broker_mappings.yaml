@@ -1,0 +1,90 @@
+# ════════════════════════════════════════════════════════════════════════
+#  Broker source-format registry
+#  ------------------------------------------------------------------------
+#  Each broker delivers data in its own shape. These deterministic mappings
+#  are the FALLBACK / seed for the Cortex header-mapping procedure
+#  (sp_cortex_header_mapping). Cortex handles unseen / drifting headers at
+#  runtime; this file gives ground-truth examples and a safety net so the
+#  pipeline is never blocked waiting on an LLM call.
+#
+#  canonical fields are defined in config/canonical_schema.yaml
+# ════════════════════════════════════════════════════════════════════════
+
+brokers:
+
+  BRK_ALPHA:                       # delivers CSV
+    display_name: "Alpha Insurance Brokers"
+    format: csv
+    record_types: [policy, claim]
+    header_map:
+      policy:
+        "Policy No":            policy_number
+        "Cust Name":            customer_name
+        "Product":              product_name
+        "Premium (USD)":        premium_amount
+        "Start":                effective_date
+        "End":                  expiry_date
+        "Sum Insured":          sum_insured
+        "Agent":                broker_agent
+      claim:
+        "Claim Ref":            claim_number
+        "Policy No":            policy_number
+        "Loss Date":            loss_date
+        "Reported":             reported_date
+        "Claim Amt":            claim_amount
+        "Status":               claim_status
+        "Description":          loss_description
+
+  BRK_BETA:                        # delivers JSON
+    display_name: "Beta Risk Partners"
+    format: json
+    record_types: [policy, claim]
+    header_map:
+      policy:
+        "policyId":             policy_number
+        "insuredName":          customer_name
+        "coverageType":         product_name
+        "annualPremium":        premium_amount
+        "inceptionDate":        effective_date
+        "renewalDate":          expiry_date
+        "insuredValue":         sum_insured
+        "producerCode":         broker_agent
+      claim:
+        "claimId":              claim_number
+        "policyId":             policy_number
+        "dateOfLoss":           loss_date
+        "notifiedOn":           reported_date
+        "amountClaimed":        claim_amount
+        "claimState":           claim_status
+        "lossNarrative":        loss_description
+
+  BRK_GAMMA:                       # delivers pipe-delimited / "legacy" headers
+    display_name: "Gamma Underwriting Co."
+    format: csv
+    delimiter: "|"
+    record_types: [policy, claim]
+    header_map:
+      policy:
+        "POL_ID":               policy_number
+        "CLIENT":               customer_name
+        "LOB":                  product_name      # Line Of Business
+        "PREM_AMT":             premium_amount
+        "EFF_DT":               effective_date
+        "EXP_DT":               expiry_date
+        "TSI":                  sum_insured       # Total Sum Insured
+        "BRKR":                 broker_agent
+      claim:
+        "CLM_ID":               claim_number
+        "POL_ID":               policy_number
+        "DOL":                  loss_date
+        "RPT_DT":               reported_date
+        "RESERVE":              claim_amount
+        "STAT":                 claim_status
+        "REMARKS":              loss_description
+
+# Default cleansing applied to every broker after mapping
+normalization:
+  date_formats: ["%Y-%m-%d", "%d/%m/%Y", "%m/%d/%Y", "%d-%b-%Y"]
+  currency_symbols_strip: ["$", "USD", "£", ",", " "]
+  uppercase_codes: [claim_status, product_name]
+  trim_whitespace: true

@@ -1,0 +1,5 @@
+CLM_ID|POL_ID|DOL|RPT_DT|RESERVE|STAT|REMARKS
+CLM-500001|POL-300001|2025-08-02|2025-08-05|3200.00|OPEN|Vehicle rear-ended at traffic lights, moderate bumper damage.
+CLM-500002|POL-300002|2025-07-18|2025-09-30|14500.00|IN_REVIEW|Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500003|POL-300003|2025-09-01|2025-09-02|875.50|PAID|Windscreen cracked by road debris on the motorway.
+CLM-500004|POL-300004|2026-12-01|2025-09-10|9800.00|OPEN|Future-dated loss (defect row to exercise validation CLM_004).

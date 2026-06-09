@@ -1,0 +1,36 @@
+{
+  "//": "Production path — Snowflake Kafka Connector in Snowpipe Streaming mode.",
+  "//ingestion": "snowflake.ingestion.method=SNOWPIPE_STREAMING streams rows directly into RAW tables with sub-second latency. Deploy onto a Kafka Connect worker: POST this to the Connect REST API /connectors.",
+  "name": "insurance-snowpipe-streaming-sink",
+  "config": {
+    "connector.class": "com.snowflake.kafka.connector.SnowflakeSinkConnector",
+    "tasks.max": "4",
+    "topics": "insurance.policies.raw,insurance.claims.raw",
+
+    "snowflake.url.name": "xy12345.us-east-1.snowflakecomputing.com:443",
+    "snowflake.user.name": "INSURANCE_SVC",
+    "snowflake.role.name": "INSURANCE_ENGINEER",
+    "snowflake.private.key": "<base64 PKCS8 private key, no header/footer>",
+    "snowflake.database.name": "INSURANCE_PLATFORM",
+    "snowflake.schema.name": "RAW",
+
+    "snowflake.ingestion.method": "SNOWPIPE_STREAMING",
+    "snowflake.streaming.enable.single.buffer": "true",
+    "snowflake.enable.schematization": "false",
+
+    "//topic2table": "Route each topic to its RAW landing table",
+    "snowflake.topic2table.map": "insurance.policies.raw:RAW_POLICY_STREAM,insurance.claims.raw:RAW_CLAIM_STREAM",
+
+    "buffer.count.records": "500",
+    "buffer.flush.time": "2",
+    "buffer.size.bytes": "5000000",
+
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+
+    "errors.tolerance": "all",
+    "errors.deadletterqueue.topic.name": "insurance.dlq",
+    "errors.log.enable": "true"
+  }
+}

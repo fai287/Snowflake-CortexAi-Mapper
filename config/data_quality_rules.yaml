@@ -1,0 +1,117 @@
+# ════════════════════════════════════════════════════════════════════════
+#  Configurable Data Quality framework
+#  ------------------------------------------------------------------------
+#  Rules are loaded by sp_run_data_quality (and the Python DQ engine in
+#  src/common/dq_engine.py) and evaluated against STAGING records.
+#  Each failing rule writes a row to GOVERNANCE.DQ_RESULT and, when
+#  `explain: true`, Cortex generates a plain-English reason for the failure.
+#
+#  severity:
+#    ERROR   -> record is quarantined, NOT promoted to ANALYTICS
+#    WARN    -> record promoted but flagged
+#    INFO    -> informational only
+# ════════════════════════════════════════════════════════════════════════
+
+version: 1
+defaults:
+  explain: true            # generate Cortex NL explanation on failure
+  sample_explanations: 50  # cap LLM calls per batch to control cost
+
+rulesets:
+
+  policy:
+    - id: POL_001
+      description: "Policy number must be present"
+      severity: ERROR
+      expression: "policy_number IS NOT NULL AND TRIM(policy_number) <> ''"
+
+    - id: POL_002
+      description: "Premium must be a positive number"
+      severity: ERROR
+      expression: "premium_amount IS NOT NULL AND premium_amount > 0"
+
+    - id: POL_003
+      description: "Premium within plausible range (0 < premium <= 1,000,000)"
+      severity: WARN
+      expression: "premium_amount > 0 AND premium_amount <= 1000000"
+
+    - id: POL_004
+      description: "Effective date must be on or before expiry date"
+      severity: ERROR
+      expression: "effective_date <= expiry_date"
+
+    - id: POL_005
+      description: "Policy term should not exceed 5 years"
+      severity: WARN
+      expression: "DATEDIFF('day', effective_date, expiry_date) <= 1830"
+
+    - id: POL_006
+      description: "Customer name present (required for KYC)"
+      severity: ERROR
+      expression: "customer_name IS NOT NULL AND LENGTH(TRIM(customer_name)) >= 2"
+
+    - id: POL_007
+      description: "Sum insured should be >= premium (sanity check)"
+      severity: WARN
+      expression: "sum_insured IS NULL OR sum_insured >= premium_amount"
+
+    - id: POL_008
+      description: "Product line resolved to a known class"
+      severity: WARN
+      expression: "product_line IN ('AUTO','HOME','LIFE','HEALTH','TRAVEL','COMMERCIAL','MARINE','OTHER')"
+
+  claim:
+    - id: CLM_001
+      description: "Claim number must be present"
+      severity: ERROR
+      expression: "claim_number IS NOT NULL AND TRIM(claim_number) <> ''"
+
+    - id: CLM_002
+      description: "Claim must reference a policy number"
+      severity: ERROR
+      expression: "policy_number IS NOT NULL AND TRIM(policy_number) <> ''"
+
+    - id: CLM_003
+      description: "Claim amount must be zero or positive"
+      severity: ERROR
+      expression: "claim_amount IS NOT NULL AND claim_amount >= 0"
+
+    - id: CLM_004
+      description: "Loss date cannot be in the future"
+      severity: ERROR
+      expression: "loss_date <= CURRENT_DATE()"
+
+    - id: CLM_005
+      description: "Reported date must be on or after loss date"
+      severity: ERROR
+      expression: "reported_date >= loss_date"
+
+    - id: CLM_006
+      description: "Reporting lag should be <= 365 days (late-notification flag)"
+      severity: WARN
+      expression: "DATEDIFF('day', loss_date, reported_date) <= 365"
+
+    - id: CLM_007
+      description: "Claim status must be a recognized value"
+      severity: WARN
+      expression: "claim_status IN ('OPEN','IN_REVIEW','APPROVED','PAID','DENIED','CLOSED','WITHDRAWN')"
+
+    - id: CLM_008
+      description: "Referenced policy must exist in ANALYTICS (referential integrity)"
+      severity: ERROR
+      type: referential
+      expression: "EXISTS (SELECT 1 FROM ANALYTICS.DIM_POLICY p WHERE p.policy_number = claim.policy_number)"
+
+# Cross-entity / batch-level checks (run after row checks)
+batch_checks:
+  - id: BATCH_001
+    description: "Duplicate policy numbers within a single broker batch"
+    severity: WARN
+    entity: policy
+    expression: "COUNT(*) OVER (PARTITION BY broker_code, policy_number) = 1"
+  - id: BATCH_002
+    description: "Premium anomaly (z-score > 3 vs broker/product history)"
+    severity: WARN
+    entity: policy
+    type: anomaly
+    note: "Evaluated by sp_anomaly_detection using statistical + Cortex review"

@@ -1,0 +1,13 @@
+# ─────────────────────────────────────────────────────────────────────────
+#  Dashboard runtime (used by Streamlit Community Cloud).
+#  Lean on purpose so the hosted app builds fast and reliably.
+#  For the full data-engineering platform (Kafka, Snowpipe Streaming, live
+#  Cortex agent), install requirements-dev.txt instead.
+# ─────────────────────────────────────────────────────────────────────────
+streamlit==1.39.0
+plotly==5.24.1
+pandas==2.2.3
+numpy==2.1.2
+altair==5.4.1
+PyYAML==6.0.2
+python-dotenv==1.0.1

@@ -1,0 +1,32 @@
+[
+  {
+    "policyId": "POL-200001",
+    "insuredName": "Wayne Enterprises",
+    "coverageType": "Buildings & Contents",
+    "annualPremium": 820.5,
+    "inceptionDate": "2025-06-01",
+    "renewalDate": "2026-06-01",
+    "insuredValue": 310000,
+    "producerCode": "BETA-77"
+  },
+  {
+    "policyId": "POL-200002",
+    "insuredName": "Stark Industries",
+    "coverageType": "Marine Cargo",
+    "annualPremium": 7400.0,
+    "inceptionDate": "2025-05-12",
+    "renewalDate": "2026-05-12",
+    "insuredValue": 2500000,
+    "producerCode": "BETA-12"
+  },
+  {
+    "policyId": "POL-200003",
+    "insuredName": "M. Patel",
+    "coverageType": "Worldwide Travel",
+    "annualPremium": 135.0,
+    "inceptionDate": "2025-07-20",
+    "renewalDate": "2026-07-20",
+    "insuredValue": 50000,
+    "producerCode": "BETA-77"
+  }
+]

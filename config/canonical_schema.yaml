@@ -1,0 +1,36 @@
+# ════════════════════════════════════════════════════════════════════════
+#  Canonical insurance schema
+#  The single source of truth that every broker format is mapped INTO.
+#  Cortex header mapping is constrained to choose targets from this list.
+# ════════════════════════════════════════════════════════════════════════
+
+entities:
+
+  policy:
+    fields:
+      - {name: policy_number,   type: string,   required: true,  pii: false}
+      - {name: customer_name,   type: string,   required: true,  pii: true}
+      - {name: product_name,    type: string,   required: true,  pii: false}
+      - {name: product_line,    type: string,   required: false, pii: false,
+         note: "Standardized product class set by Cortex CLASSIFY_TEXT"}
+      - {name: premium_amount,  type: number,   required: true,  pii: false}
+      - {name: sum_insured,     type: number,   required: false, pii: false}
+      - {name: effective_date,  type: date,     required: true,  pii: false}
+      - {name: expiry_date,     type: date,     required: true,  pii: false}
+      - {name: broker_agent,    type: string,   required: false, pii: false}
+
+  claim:
+    fields:
+      - {name: claim_number,    type: string,   required: true,  pii: false}
+      - {name: policy_number,   type: string,   required: true,  pii: false}
+      - {name: loss_date,       type: date,     required: true,  pii: false}
+      - {name: reported_date,   type: date,     required: true,  pii: false}
+      - {name: claim_amount,    type: number,   required: true,  pii: false}
+      - {name: claim_status,    type: string,   required: true,  pii: false}
+      - {name: loss_description,type: string,   required: false, pii: false}
+
+# Controlled vocabularies used by enrichment + validation
+vocabularies:
+  product_line: [AUTO, HOME, LIFE, HEALTH, TRAVEL, COMMERCIAL, MARINE, OTHER]
+  claim_status: [OPEN, IN_REVIEW, APPROVED, PAID, DENIED, CLOSED, WITHDRAWN]
+  risk_tier:    [LOW, MEDIUM, HIGH, SEVERE]

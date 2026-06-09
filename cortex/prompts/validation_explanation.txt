@@ -1,0 +1,19 @@
+TASK
+Explain, in plain business English, why an insurance record failed a data
+quality rule. The reader is an operations analyst, not an engineer.
+
+INPUTS
+- Entity:           {entity}        (policy | claim)
+- Failed rule:      {rule_description}
+- Rule severity:    {severity}
+- Offending record: {record_json}
+
+INSTRUCTIONS
+- Write 1–2 sentences.
+- Name the specific offending value (e.g. "the premium is -450.00, which is
+  negative").
+- State the business impact in a few words (e.g. "so it cannot be billed").
+- Do NOT propose code or SQL. Do NOT restate the whole record.
+
+OUTPUT
+The explanation sentence(s) only.

@@ -1,0 +1,23 @@
+# Full platform dependencies (data engineering + ingestion + live Cortex agent).
+# Install for local/full deployment:  pip install -r requirements-dev.txt
+# The hosted dashboard only needs requirements.txt (lean).
+
+-r requirements.txt
+
+# ─── Snowflake ───────────────────────────────────────────────
+snowflake-connector-python[pandas]==3.12.3
+snowflake-snowpark-python==1.24.0
+snowflake-ingest==1.0.10            # Snowpipe Streaming (rowset) client
+cryptography==43.0.1                # key-pair auth for Snowpipe Streaming
+
+# ─── Kafka ───────────────────────────────────────────────────
+confluent-kafka==2.5.3
+
+# ─── Utilities ───────────────────────────────────────────────
+pydantic==2.9.2
+tenacity==9.0.0                     # retry/backoff for ingest + Cortex calls
+rich==13.9.2                        # nicer producer/console logs
+
+# ─── Testing ─────────────────────────────────────────────────
+pytest==8.3.3
+pytest-mock==3.14.0

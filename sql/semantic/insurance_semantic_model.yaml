@@ -1,0 +1,109 @@
+# ════════════════════════════════════════════════════════════════════════
+#  Cortex Analyst semantic model
+#  ------------------------------------------------------------------------
+#  Maps business concepts onto the SEMANTIC views so the conversational AI
+#  agent can translate natural-language questions into safe, correct SQL.
+#  Upload with: PUT this file to a stage, then reference it from
+#  SNOWFLAKE.CORTEX.ANALYST / the chatbot. The chatbot also embeds a compact
+#  version of this model directly in its NL→SQL prompt (chatbot/agent.py).
+#
+#  DELIVERABLE: "Semantic Layer"
+# ════════════════════════════════════════════════════════════════════════
+name: insurance_platform
+description: >
+  Insurance policies, claims, brokers and data-quality results for an
+  AI-powered insurance data platform. Use for questions about policy volume,
+  premium revenue, claims, loss ratios, broker performance, ingestion health
+  and validation errors.
+
+tables:
+  - name: POLICIES
+    description: One row per insurance policy with broker, customer and product context.
+    base_table: {database: INSURANCE_PLATFORM, schema: SEMANTIC, table: POLICIES}
+    primary_key: {columns: [policy_number]}
+    dimensions:
+      - {name: policy_number,  expr: policy_number,  data_type: text, description: Unique policy identifier}
+      - {name: broker_name,    expr: broker_name,    data_type: text, synonyms: [broker, agency]}
+      - {name: broker_code,    expr: broker_code,    data_type: text}
+      - {name: customer_name,  expr: customer_name,  data_type: text, synonyms: [insured, client]}
+      - {name: customer_segment, expr: customer_segment, data_type: text, synonyms: [segment]}
+      - {name: risk_tier,      expr: risk_tier,      data_type: text}
+      - {name: product_line,   expr: product_line,   data_type: text, synonyms: [product, line of business, lob, coverage]}
+      - {name: is_active,      expr: is_active,      data_type: boolean, synonyms: [in force, active]}
+    time_dimensions:
+      - {name: effective_date, expr: effective_date, data_type: date, synonyms: [start date, inception]}
+      - {name: expiry_date,    expr: expiry_date,    data_type: date, synonyms: [end date, renewal]}
+    measures:
+      - {name: policy_count,   expr: COUNT(policy_number), data_type: number, default_aggregation: count, synonyms: [number of policies, policy volume]}
+      - {name: total_premium,  expr: SUM(premium_amount),  data_type: number, default_aggregation: sum, synonyms: [premium revenue, gwp, gross written premium]}
+      - {name: avg_premium,    expr: AVG(premium_amount),  data_type: number, default_aggregation: avg}
+      - {name: total_sum_insured, expr: SUM(sum_insured),  data_type: number, default_aggregation: sum, synonyms: [exposure, tiv]}
+      - {name: avg_anomaly_score, expr: AVG(anomaly_score), data_type: number, default_aggregation: avg}
+
+  - name: CLAIMS
+    description: One row per claim with policy, broker and customer context.
+    base_table: {database: INSURANCE_PLATFORM, schema: SEMANTIC, table: CLAIMS}
+    primary_key: {columns: [claim_number]}
+    dimensions:
+      - {name: claim_number,  expr: claim_number,  data_type: text}
+      - {name: claim_status,  expr: claim_status,  data_type: text, synonyms: [status]}
+      - {name: policy_number, expr: policy_number, data_type: text}
+      - {name: broker_name,   expr: broker_name,   data_type: text}
+      - {name: product_line,  expr: product_line,  data_type: text}
+      - {name: customer_name, expr: customer_name, data_type: text}
+    time_dimensions:
+      - {name: loss_date,     expr: loss_date,     data_type: date, synonyms: [date of loss]}
+      - {name: reported_date, expr: reported_date, data_type: date}
+    measures:
+      - {name: claim_count,   expr: COUNT(claim_number), data_type: number, default_aggregation: count, synonyms: [number of claims, claim volume]}
+      - {name: total_claims,  expr: SUM(claim_amount),   data_type: number, default_aggregation: sum, synonyms: [claims paid, incurred]}
+      - {name: avg_claim,     expr: AVG(claim_amount),   data_type: number, default_aggregation: avg}
+      - {name: avg_reporting_lag, expr: AVG(reporting_lag_days), data_type: number, default_aggregation: avg, synonyms: [reporting delay]}
+
+  - name: BROKER_PERFORMANCE
+    description: Per-broker aggregates including loss ratio.
+    base_table: {database: INSURANCE_PLATFORM, schema: SEMANTIC, table: BROKER_PERFORMANCE}
+    dimensions:
+      - {name: broker_code, expr: broker_code, data_type: text}
+      - {name: broker_name, expr: broker_name, data_type: text}
+    measures:
+      - {name: policy_count,        expr: SUM(policy_count),        data_type: number, default_aggregation: sum}
+      - {name: total_premium,       expr: SUM(total_premium),       data_type: number, default_aggregation: sum}
+      - {name: total_claims_amount, expr: SUM(total_claims_amount), data_type: number, default_aggregation: sum}
+      - {name: loss_ratio,          expr: AVG(loss_ratio),          data_type: number, default_aggregation: avg, synonyms: [loss ratio, claims ratio]}
+
+  - name: INGESTION_HEALTH
+    description: Real-time ingest freshness per broker and record type.
+    base_table: {database: INSURANCE_PLATFORM, schema: SEMANTIC, table: INGESTION_HEALTH}
+    dimensions:
+      - {name: broker_code,   expr: broker_code,   data_type: text}
+      - {name: record_type,   expr: record_type,   data_type: text}
+      - {name: ingest_status, expr: ingest_status, data_type: text, synonyms: [health, status]}
+    measures:
+      - {name: rows_landed,        expr: SUM(rows_landed),         data_type: number, default_aggregation: sum}
+      - {name: seconds_since_last, expr: MAX(seconds_since_last),  data_type: number, default_aggregation: max, synonyms: [lag, staleness]}
+
+  - name: VALIDATION_SUMMARY
+    description: Data-quality validation failures grouped by rule and severity.
+    base_table: {database: INSURANCE_PLATFORM, schema: SEMANTIC, table: VALIDATION_SUMMARY}
+    dimensions:
+      - {name: entity,           expr: entity,           data_type: text}
+      - {name: rule_id,          expr: rule_id,          data_type: text}
+      - {name: rule_description, expr: rule_description, data_type: text}
+      - {name: severity,         expr: severity,         data_type: text}
+    measures:
+      - {name: failure_count, expr: SUM(failure_count), data_type: number, default_aggregation: sum, synonyms: [errors, validation errors, failures]}
+
+verified_queries:
+  - name: total_premium_by_product
+    question: What is the total premium revenue by product line?
+    sql: SELECT product_line, SUM(premium_amount) AS total_premium FROM SEMANTIC.POLICIES GROUP BY product_line ORDER BY total_premium DESC
+  - name: top_brokers_by_loss_ratio
+    question: Which brokers have the highest loss ratio?
+    sql: SELECT broker_name, loss_ratio FROM SEMANTIC.BROKER_PERFORMANCE ORDER BY loss_ratio DESC NULLS LAST LIMIT 10
+  - name: stale_ingestion
+    question: Which brokers have stale ingestion?
+    sql: SELECT broker_code, record_type, seconds_since_last FROM SEMANTIC.INGESTION_HEALTH WHERE ingest_status = 'STALE'
+  - name: top_validation_errors
+    question: What are the most common validation errors?
+    sql: SELECT rule_description, severity, failure_count FROM SEMANTIC.VALIDATION_SUMMARY ORDER BY failure_count DESC LIMIT 10

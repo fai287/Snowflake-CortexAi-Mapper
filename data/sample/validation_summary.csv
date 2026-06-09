@@ -1,0 +1,10 @@
+ENTITY,RULE_ID,RULE_DESCRIPTION,SEVERITY,FAILURE_COUNT
+policy,POL_002,Premium must be a positive number,ERROR,8
+policy,POL_004,Effective date must be <= expiry date,ERROR,11
+policy,POL_006,Customer name present (KYC),ERROR,7
+policy,POL_003,Premium within plausible range,WARN,15
+policy,POL_008,Product line resolved to known class,WARN,4
+claim,CLM_004,Loss date cannot be in the future,ERROR,8
+claim,CLM_005,Reported date >= loss date,ERROR,8
+claim,CLM_002,Claim must reference a policy,ERROR,4
+claim,CLM_006,Reporting lag <= 365 days,WARN,18

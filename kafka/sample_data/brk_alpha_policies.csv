@@ -1,0 +1,6 @@
+Policy No,Cust Name,Product,Premium (USD),Start,End,Sum Insured,Agent
+POL-100001,Acme Corp,Motor Vehicle,$1,240.00,2025-01-15,2026-01-15,48000,AG204
+POL-100002,J. Smith,Homeowners,$640.00,2025-03-01,2026-03-01,250000,AG119
+POL-100003,Globex,Commercial Combined,"$5,400.00",2025-02-20,2026-02-20,1200000,AG350
+POL-100004,M. Brown,Term Life,"$1,180.00",2025-04-10,2026-04-10,500000,AG204
+POL-100005,Initech,Private Medical,"$2,050.00",2025-05-05,2026-05-05,0,AG119

@@ -1,0 +1,21 @@
+TASK
+Classify the insurance product described below into exactly one standardized
+product line.
+
+PRODUCT LINES (choose one)
+AUTO, HOME, LIFE, HEALTH, TRAVEL, COMMERCIAL, MARINE, OTHER
+
+GUIDANCE
+- "Motor", "Car", "Private Motor", "Vehicle"        -> AUTO
+- "Homeowners", "Buildings & Contents", "Household" -> HOME
+- "Term Life", "Whole of Life", "Assurance"         -> LIFE
+- "Medical", "PMI", "Health Plan"                   -> HEALTH
+- "Trip", "Worldwide Travel"                         -> TRAVEL
+- "Business Pack", "SME", "Commercial Combined"      -> COMMERCIAL
+- "Cargo", "Hull", "Goods in Transit"               -> MARINE
+- Anything unclear                                   -> OTHER
+
+PRODUCT TEXT
+{product_text}
+
+Respond with ONLY the product line label.

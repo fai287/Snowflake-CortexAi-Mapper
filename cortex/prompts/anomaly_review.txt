@@ -1,0 +1,20 @@
+TASK
+A statistical screen flagged the following insurance figure as a potential
+outlier (z-score beyond 3 standard deviations from its peer group). Assess
+whether it is genuinely anomalous and explain why, briefly, for an underwriter.
+
+CONTEXT
+- Entity:        {entity}            (policy premium or claim amount)
+- Flagged value: {value}
+- Peer average:  {peer_mean}
+- Peer group:    {peer_group}        (e.g. broker + product line)
+- Extra context: {extra_context}
+
+INSTRUCTIONS
+- Decide: is this plausibly a legitimate figure, or likely a data error /
+  fraud signal?
+- Give ONE concise sentence an underwriter can act on. Reference the value and
+  how it compares to the peer average. Do not output code or JSON.
+
+OUTPUT
+A single explanatory sentence.

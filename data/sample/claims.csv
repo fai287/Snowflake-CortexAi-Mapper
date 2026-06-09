@@ -1,0 +1,321 @@
+CLAIM_NUMBER,CLAIM_STATUS,POLICY_NUMBER,BROKER_NAME,BROKER_CODE,CUSTOMER_NAME,PRODUCT_LINE,LOSS_DATE,REPORTED_DATE,REPORTING_LAG_DAYS,CLAIM_AMOUNT,SENTIMENT_SCORE,ANOMALY_SCORE,ANOMALY_REASON,LOSS_DESCRIPTION
+CLM-500000,PAID,POL-100113,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,TRAVEL,2025-11-29,2025-12-26,27,523.51,-0.234,0.088,,Theft of insured contents following forced entry overnight.
+CLM-500001,APPROVED,POL-100572,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,COMMERCIAL,2025-10-01,2025-10-28,27,14595.88,-0.229,0.102,,Theft of insured contents following forced entry overnight.
+CLM-500002,PAID,POL-100377,Beta Risk Partners,BRK_BETA,L. Nguyen,TRAVEL,2025-07-24,2025-09-02,40,431.17,0.29,0.137,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500003,PAID,POL-100495,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,AUTO,2025-10-24,2025-11-12,19,2796.01,-0.238,0.109,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500004,IN_REVIEW,POL-100052,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,HOME,2026-02-22,2026-04-02,39,2111.46,-0.315,0.0,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500005,CLOSED,POL-100792,Beta Risk Partners,BRK_BETA,Globex,AUTO,2025-09-12,2025-10-13,31,4880.18,0.346,0.105,,Windscreen cracked by road debris on the motorway.
+CLM-500006,APPROVED,POL-100162,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,AUTO,2025-02-28,2025-04-09,40,1896.22,-0.742,0.106,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500007,APPROVED,POL-100368,Alpha Insurance Brokers,BRK_ALPHA,A. Patel,COMMERCIAL,2026-01-15,2026-02-01,17,53197.96,0.344,0.128,,Theft of insured contents following forced entry overnight.
+CLM-500008,CLOSED,POL-100445,Gamma Underwriting Co.,BRK_GAMMA,M. Brown,TRAVEL,2025-05-31,2025-05-31,0,4892.56,-0.3,0.071,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500009,DENIED,POL-100051,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,LIFE,2025-10-01,2025-10-02,1,539.12,-0.544,0.222,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500010,APPROVED,POL-100490,Beta Risk Partners,BRK_BETA,Initech,LIFE,2025-06-15,2025-06-22,7,5678.1,-0.469,0.049,,Windscreen cracked by road debris on the motorway.
+CLM-500011,IN_REVIEW,POL-100784,Beta Risk Partners,BRK_BETA,L. Nguyen,HOME,2026-05-03,2026-06-07,35,4315.72,-0.354,0.018,,Windscreen cracked by road debris on the motorway.
+CLM-500012,APPROVED,POL-100529,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,TRAVEL,2026-06-12,2026-07-16,34,455.13,-0.266,0.05,,"Slip and fall on business premises, minor injury claim."
+CLM-500013,OPEN,POL-100123,Beta Risk Partners,BRK_BETA,Globex,LIFE,2025-11-07,2025-12-18,41,113469.59,-0.419,0.024,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500014,CLOSED,POL-100737,Beta Risk Partners,BRK_BETA,Globex,MARINE,2026-01-23,2026-01-26,3,10941.55,-0.324,0.225,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500015,CLOSED,POL-100173,Beta Risk Partners,BRK_BETA,L. Nguyen,HEALTH,2025-11-25,2026-01-02,38,9033.59,-0.101,0.078,,Theft of insured contents following forced entry overnight.
+CLM-500016,PAID,POL-100246,Gamma Underwriting Co.,BRK_GAMMA,J. Smith,COMMERCIAL,2026-01-17,2026-02-23,37,31577.02,0.194,0.147,,"Slip and fall on business premises, minor injury claim."
+CLM-500017,APPROVED,POL-100151,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,TRAVEL,2025-10-15,2025-11-22,38,14470.35,-0.528,0.037,,"Slip and fall on business premises, minor injury claim."
+CLM-500018,DENIED,POL-100614,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,HEALTH,2026-04-16,2026-04-16,0,15283.75,0.243,0.041,,Theft of insured contents following forced entry overnight.
+CLM-500019,APPROVED,POL-100523,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,HEALTH,2025-10-16,2025-11-22,37,2555.31,-0.726,0.053,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500020,DENIED,POL-100211,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,AUTO,2025-06-25,2025-07-16,21,3295.72,-0.34,0.036,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500021,PAID,POL-100243,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,MARINE,2026-07-21,2026-08-28,38,11872.81,0.302,0.006,,Theft of insured contents following forced entry overnight.
+CLM-500022,OPEN,POL-100501,Gamma Underwriting Co.,BRK_GAMMA,T. Müller,MARINE,2025-12-02,2026-01-07,36,31758.36,0.103,0.06,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500023,OPEN,POL-100141,Gamma Underwriting Co.,BRK_GAMMA,M. Brown,HEALTH,2026-02-22,2026-04-01,38,11066.4,0.21,0.129,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500024,DENIED,POL-100118,Beta Risk Partners,BRK_BETA,Initech,AUTO,2025-11-29,2026-01-07,39,1842.22,-0.049,0.089,,Storm damage to roof tiles after severe weather warning.
+CLM-500025,OPEN,POL-100472,Beta Risk Partners,BRK_BETA,Umbrella Ltd,HEALTH,2026-01-18,2026-01-28,10,21457.0,0.029,0.089,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500026,OPEN,POL-100101,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,TRAVEL,2026-04-04,2026-04-21,17,917.93,-0.339,0.033,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500027,IN_REVIEW,POL-100428,Gamma Underwriting Co.,BRK_GAMMA,P. Ivanov,TRAVEL,2026-04-04,2026-05-14,40,338.23,-0.275,0.096,,Storm damage to roof tiles after severe weather warning.
+CLM-500028,APPROVED,POL-100430,Gamma Underwriting Co.,BRK_GAMMA,J. Smith,AUTO,2025-11-06,2025-12-20,44,2371.69,-0.42,0.056,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500029,OPEN,POL-100232,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,LIFE,2026-03-17,2026-04-07,21,2275.98,0.252,0.023,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500030,PAID,POL-100398,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,MARINE,2025-12-09,2026-01-04,26,32599.98,0.259,0.055,,Theft of insured contents following forced entry overnight.
+CLM-500031,OPEN,POL-100006,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,AUTO,2025-10-04,2025-10-23,19,1641.13,-0.089,0.173,,Windscreen cracked by road debris on the motorway.
+CLM-500032,APPROVED,POL-100725,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,COMMERCIAL,2025-12-29,2026-02-08,41,40735.35,0.028,0.189,,"Slip and fall on business premises, minor injury claim."
+CLM-500033,IN_REVIEW,POL-100600,Gamma Underwriting Co.,BRK_GAMMA,Globex,MARINE,2026-05-15,2026-06-03,19,51760.69,-0.678,0.012,,Windscreen cracked by road debris on the motorway.
+CLM-500034,PAID,POL-100018,Alpha Insurance Brokers,BRK_ALPHA,Initech,AUTO,2025-11-10,2025-11-26,16,3698.85,-0.183,0.03,,Theft of insured contents following forced entry overnight.
+CLM-500035,IN_REVIEW,POL-100648,Gamma Underwriting Co.,BRK_GAMMA,J. Smith,TRAVEL,2025-03-27,2025-04-10,14,257.89,-0.473,0.03,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500036,APPROVED,POL-100074,Alpha Insurance Brokers,BRK_ALPHA,Initech,TRAVEL,2025-10-31,2025-11-17,17,291.55,0.068,0.045,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500037,CLOSED,POL-100643,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,COMMERCIAL,2026-01-08,2026-02-16,39,11449.83,0.156,0.039,,"Slip and fall on business premises, minor injury claim."
+CLM-500038,PAID,POL-100220,Beta Risk Partners,BRK_BETA,A. Patel,AUTO,2026-04-02,2026-04-15,13,1505.11,-0.44,0.099,,"Slip and fall on business premises, minor injury claim."
+CLM-500039,APPROVED,POL-100360,Gamma Underwriting Co.,BRK_GAMMA,Globex,HEALTH,2026-07-16,2026-08-27,42,8984.63,0.046,0.213,,Storm damage to roof tiles after severe weather warning.
+CLM-500040,IN_REVIEW,POL-100494,Beta Risk Partners,BRK_BETA,Globex,LIFE,2026-01-29,2026-03-01,31,11120.61,0.07,0.073,,Storm damage to roof tiles after severe weather warning.
+CLM-500041,PAID,POL-100039,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,HOME,2026-06-03,2026-06-25,22,1760.02,-0.366,0.064,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500042,DENIED,POL-100567,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,TRAVEL,2026-04-23,2026-04-27,4,492.26,-0.731,0.159,,Storm damage to roof tiles after severe weather warning.
+CLM-500043,APPROVED,POL-100396,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,COMMERCIAL,2025-10-25,2025-11-25,31,5954.27,0.086,0.232,,Windscreen cracked by road debris on the motorway.
+CLM-500044,PAID,POL-100284,Beta Risk Partners,BRK_BETA,P. Ivanov,AUTO,2026-03-30,2026-04-17,18,1104.99,-0.524,0.335,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500045,APPROVED,POL-100722,Gamma Underwriting Co.,BRK_GAMMA,P. Ivanov,HOME,2026-03-03,2026-03-18,15,1334.43,0.124,0.194,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500046,OPEN,POL-100187,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,COMMERCIAL,2026-09-13,2026-10-20,37,8441.88,0.141,0.034,,Windscreen cracked by road debris on the motorway.
+CLM-500047,APPROVED,POL-100194,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,COMMERCIAL,2025-09-01,2025-09-16,15,48634.96,-0.279,0.018,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500048,APPROVED,POL-100381,Beta Risk Partners,BRK_BETA,A. Patel,HOME,2025-08-23,2025-09-04,12,5053.33,-0.793,0.049,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500049,DENIED,POL-100756,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,COMMERCIAL,2025-09-29,2025-10-22,23,753866.01,0.143,0.15,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500050,IN_REVIEW,POL-100626,Beta Risk Partners,BRK_BETA,Umbrella Ltd,HEALTH,2025-08-29,2025-09-16,18,13951.84,-0.733,0.258,,"Slip and fall on business premises, minor injury claim."
+CLM-500051,CLOSED,POL-100057,Beta Risk Partners,BRK_BETA,Umbrella Ltd,HEALTH,2025-08-17,2025-09-09,23,3256.16,0.363,0.071,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500052,DENIED,POL-100443,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,HEALTH,2025-09-07,2025-09-25,18,9804.06,-0.555,0.083,,Windscreen cracked by road debris on the motorway.
+CLM-500053,APPROVED,POL-100348,Beta Risk Partners,BRK_BETA,Stark Industries,AUTO,2025-10-21,2025-10-24,3,3715.77,0.22,0.004,,Storm damage to roof tiles after severe weather warning.
+CLM-500054,IN_REVIEW,POL-100774,Beta Risk Partners,BRK_BETA,Acme Corp,HOME,2025-03-29,2025-04-03,5,5447.08,-0.841,0.137,,"Slip and fall on business premises, minor injury claim."
+CLM-500055,OPEN,POL-100641,Beta Risk Partners,BRK_BETA,J. Smith,COMMERCIAL,2025-11-27,2026-01-01,35,13156.9,-0.115,0.004,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500056,DENIED,POL-100030,Beta Risk Partners,BRK_BETA,S. Haddad,TRAVEL,2025-08-23,2025-09-02,10,416.61,0.26,0.085,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500057,IN_REVIEW,POL-100056,Gamma Underwriting Co.,BRK_GAMMA,P. Ivanov,LIFE,2026-01-16,2026-01-22,6,6956.01,0.252,0.147,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500058,DENIED,POL-100147,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,MARINE,2025-09-08,2025-10-22,44,40152.32,-0.006,0.056,,Storm damage to roof tiles after severe weather warning.
+CLM-500059,IN_REVIEW,POL-100484,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,MARINE,2026-02-27,2026-03-03,4,27135.57,-0.063,0.048,,Storm damage to roof tiles after severe weather warning.
+CLM-500060,APPROVED,POL-100242,Alpha Insurance Brokers,BRK_ALPHA,Initech,MARINE,2025-06-14,2025-06-30,16,13519.53,0.257,0.024,,Windscreen cracked by road debris on the motorway.
+CLM-500061,APPROVED,POL-100386,Gamma Underwriting Co.,BRK_GAMMA,P. Ivanov,COMMERCIAL,2025-07-28,2025-08-22,25,20416.18,-0.894,0.134,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500062,PAID,POL-100212,Gamma Underwriting Co.,BRK_GAMMA,P. Ivanov,HOME,2025-10-28,2025-11-04,7,952.97,-0.844,0.063,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500063,PAID,POL-100670,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,COMMERCIAL,2026-02-22,2026-03-31,37,59333.02,-0.877,0.113,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500064,PAID,POL-100203,Alpha Insurance Brokers,BRK_ALPHA,A. Patel,AUTO,2025-08-04,2025-08-11,7,4285.12,0.321,0.066,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500065,OPEN,POL-100616,Beta Risk Partners,BRK_BETA,Initech,MARINE,2026-06-03,2026-07-08,35,27347.22,0.233,0.113,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500066,IN_REVIEW,POL-100146,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,HEALTH,2026-06-26,2026-07-24,28,9944.87,-0.75,0.303,,Windscreen cracked by road debris on the motorway.
+CLM-500067,OPEN,POL-100517,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,MARINE,2025-08-22,2025-09-04,13,19732.89,-0.41,0.036,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500068,CLOSED,POL-100388,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,HEALTH,2026-02-08,2026-02-27,19,9008.51,-0.34,0.075,,"Slip and fall on business premises, minor injury claim."
+CLM-500069,PAID,POL-100337,Beta Risk Partners,BRK_BETA,Wayne Enterprises,AUTO,2026-03-15,2026-03-25,10,4327.42,-0.066,0.346,,Windscreen cracked by road debris on the motorway.
+CLM-500070,PAID,POL-100556,Beta Risk Partners,BRK_BETA,J. Smith,MARINE,2025-10-08,2025-10-09,1,15282.17,-0.288,0.05,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500071,APPROVED,POL-100708,Beta Risk Partners,BRK_BETA,Stark Industries,HEALTH,2026-04-20,2026-04-20,0,16118.0,0.143,0.097,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500072,CLOSED,POL-100704,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,HOME,2026-03-09,2026-04-08,30,957.94,0.388,0.075,,"Slip and fall on business premises, minor injury claim."
+CLM-500073,OPEN,POL-100583,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,LIFE,2025-12-26,2026-01-27,32,3468.02,-0.565,0.029,,"Slip and fall on business premises, minor injury claim."
+CLM-500074,IN_REVIEW,POL-100441,Beta Risk Partners,BRK_BETA,R. Okoro,LIFE,2025-09-10,2025-10-08,28,869.11,-0.428,0.083,,Windscreen cracked by road debris on the motorway.
+CLM-500075,CLOSED,POL-100114,Beta Risk Partners,BRK_BETA,M. Brown,MARINE,2025-11-27,2026-01-07,41,16681.88,-0.555,0.033,,Windscreen cracked by road debris on the motorway.
+CLM-500076,PAID,POL-100663,Gamma Underwriting Co.,BRK_GAMMA,Acme Corp,MARINE,2025-12-23,2026-02-02,41,22383.13,0.082,0.016,,Storm damage to roof tiles after severe weather warning.
+CLM-500077,OPEN,POL-100071,Beta Risk Partners,BRK_BETA,Umbrella Ltd,MARINE,2026-06-25,2026-07-26,31,4011.43,-0.42,0.032,,Storm damage to roof tiles after severe weather warning.
+CLM-500078,IN_REVIEW,POL-100479,Beta Risk Partners,BRK_BETA,T. Müller,HEALTH,2026-03-27,2026-04-10,14,14384.69,0.264,0.005,,Theft of insured contents following forced entry overnight.
+CLM-500079,PAID,POL-100230,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,LIFE,2025-10-10,2025-10-10,0,4563.52,-0.321,0.012,,"Slip and fall on business premises, minor injury claim."
+CLM-500080,APPROVED,POL-100371,Beta Risk Partners,BRK_BETA,Wayne Enterprises,TRAVEL,2025-10-27,2025-11-26,30,135.88,-0.452,0.064,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500081,CLOSED,POL-100159,Beta Risk Partners,BRK_BETA,S. Haddad,LIFE,2025-08-12,2025-09-06,25,10771.73,-0.007,0.186,,Storm damage to roof tiles after severe weather warning.
+CLM-500082,OPEN,POL-100103,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,LIFE,2025-11-30,2025-12-02,2,13406.21,0.306,0.039,,Storm damage to roof tiles after severe weather warning.
+CLM-500083,OPEN,POL-100016,Gamma Underwriting Co.,BRK_GAMMA,A. Patel,MARINE,2025-07-12,2025-07-30,18,7693.9,-0.74,0.004,,Storm damage to roof tiles after severe weather warning.
+CLM-500084,DENIED,POL-100076,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,LIFE,2025-10-22,2025-11-15,24,6081.43,0.037,0.076,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500085,OPEN,POL-100167,Beta Risk Partners,BRK_BETA,Initech,AUTO,2025-05-11,2025-05-26,15,2710.62,0.24,0.244,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500086,IN_REVIEW,POL-100237,Beta Risk Partners,BRK_BETA,Umbrella Ltd,HOME,2025-11-05,2025-12-13,38,2460.97,-0.673,0.135,,Theft of insured contents following forced entry overnight.
+CLM-500087,OPEN,POL-100372,Beta Risk Partners,BRK_BETA,Wayne Enterprises,HEALTH,2026-04-13,2026-04-22,9,5142.62,-0.046,0.158,,"Slip and fall on business premises, minor injury claim."
+CLM-500088,DENIED,POL-100083,Beta Risk Partners,BRK_BETA,S. Haddad,LIFE,2025-10-26,2025-10-31,5,7508.0,-0.183,0.004,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500089,OPEN,POL-100729,Beta Risk Partners,BRK_BETA,S. Haddad,MARINE,2026-02-18,2026-03-08,18,21259.58,-0.731,0.059,,"Slip and fall on business premises, minor injury claim."
+CLM-500090,APPROVED,POL-100134,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,HOME,2026-08-17,2026-09-29,43,2972.31,-0.464,0.009,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500091,IN_REVIEW,POL-100121,Gamma Underwriting Co.,BRK_GAMMA,Wayne Enterprises,HEALTH,2026-07-21,2026-07-21,0,17231.79,0.341,0.029,,Windscreen cracked by road debris on the motorway.
+CLM-500092,IN_REVIEW,POL-100609,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,HOME,2025-12-24,2026-01-15,22,60306.43,-0.284,0.196,,Storm damage to roof tiles after severe weather warning.
+CLM-500093,APPROVED,POL-100184,Alpha Insurance Brokers,BRK_ALPHA,Globex,HOME,2025-09-23,2025-10-04,11,2014.14,0.316,0.055,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500094,OPEN,POL-100477,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,LIFE,2025-11-12,2025-11-17,5,6895.23,0.286,0.016,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500095,APPROVED,POL-100673,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,COMMERCIAL,2025-07-16,2025-08-10,25,59097.52,0.05,0.042,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500096,OPEN,POL-100400,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,COMMERCIAL,2025-11-14,2025-12-08,24,12237.11,-0.568,0.018,,"Slip and fall on business premises, minor injury claim."
+CLM-500097,OPEN,POL-100551,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,TRAVEL,2025-12-12,2025-12-31,19,526.58,-0.189,0.047,,Windscreen cracked by road debris on the motorway.
+CLM-500098,CLOSED,POL-100719,Beta Risk Partners,BRK_BETA,Wayne Enterprises,HEALTH,2026-05-08,2026-05-18,10,3925.11,0.253,0.09,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500099,DENIED,POL-100757,Beta Risk Partners,BRK_BETA,R. Okoro,HOME,2026-06-06,2026-06-20,14,3367.63,0.342,0.105,,Windscreen cracked by road debris on the motorway.
+CLM-500100,PAID,POL-100651,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,COMMERCIAL,2026-01-20,2026-02-20,31,7773.7,-0.239,0.087,,Windscreen cracked by road debris on the motorway.
+CLM-500101,IN_REVIEW,POL-100566,Beta Risk Partners,BRK_BETA,K. Sato,TRAVEL,2026-05-19,2026-06-19,31,157.33,-0.239,0.088,,"Slip and fall on business premises, minor injury claim."
+CLM-500102,APPROVED,POL-100222,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,TRAVEL,2025-10-29,2025-11-08,10,1307.48,0.078,0.031,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500103,IN_REVIEW,POL-100692,Alpha Insurance Brokers,BRK_ALPHA,Initech,COMMERCIAL,2026-04-19,2026-05-15,26,8156.0,-0.55,0.313,,Windscreen cracked by road debris on the motorway.
+CLM-500104,PAID,POL-100458,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,LIFE,2025-10-18,2025-11-30,43,6028.67,-0.01,0.014,,Storm damage to roof tiles after severe weather warning.
+CLM-500105,APPROVED,POL-100179,Beta Risk Partners,BRK_BETA,Globex,MARINE,2026-03-13,2026-03-15,2,20406.06,0.317,0.087,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500106,OPEN,POL-100545,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,MARINE,2026-06-04,2026-07-08,34,89728.91,-0.257,0.247,,Storm damage to roof tiles after severe weather warning.
+CLM-500107,OPEN,POL-100640,Gamma Underwriting Co.,BRK_GAMMA,J. Smith,LIFE,2025-09-03,2025-10-07,34,7864.51,-0.773,0.037,,Windscreen cracked by road debris on the motorway.
+CLM-500108,PAID,POL-100023,Gamma Underwriting Co.,BRK_GAMMA,Initech,MARINE,2025-09-18,2025-10-26,38,16474.06,0.248,0.05,,Windscreen cracked by road debris on the motorway.
+CLM-500109,OPEN,POL-100666,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,HEALTH,2025-09-23,2025-10-07,14,23710.13,-0.503,0.011,,Theft of insured contents following forced entry overnight.
+CLM-500110,IN_REVIEW,POL-100668,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,HEALTH,2025-11-20,2025-12-15,25,6115.8,-0.666,0.094,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500111,CLOSED,POL-100657,Beta Risk Partners,BRK_BETA,Acme Corp,MARINE,2025-08-06,2025-08-23,17,7384.05,-0.164,0.033,,"Slip and fall on business premises, minor injury claim."
+CLM-500112,PAID,POL-100603,Beta Risk Partners,BRK_BETA,Umbrella Ltd,LIFE,2025-04-20,2025-05-31,41,10514.34,-0.466,0.077,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500113,APPROVED,POL-100539,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,HEALTH,2026-01-10,2026-01-13,3,14805.51,-0.376,0.037,,Windscreen cracked by road debris on the motorway.
+CLM-500114,OPEN,POL-100439,Beta Risk Partners,BRK_BETA,R. Okoro,HOME,2025-04-08,2025-04-13,5,7254.28,0.368,0.086,,Theft of insured contents following forced entry overnight.
+CLM-500115,DENIED,POL-100258,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,LIFE,2025-09-29,2025-10-06,7,1035.83,-0.674,0.082,,Storm damage to roof tiles after severe weather warning.
+CLM-500116,OPEN,POL-100108,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,COMMERCIAL,2026-03-10,2026-03-20,10,59248.94,-0.708,0.023,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500117,IN_REVIEW,POL-100524,Beta Risk Partners,BRK_BETA,S. Haddad,HOME,2026-04-12,2026-04-15,3,731.87,-0.699,0.038,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500118,IN_REVIEW,POL-100402,Gamma Underwriting Co.,BRK_GAMMA,Acme Corp,COMMERCIAL,2026-01-08,2026-01-20,12,26124.93,-0.42,0.374,,Storm damage to roof tiles after severe weather warning.
+CLM-500119,PAID,POL-100683,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,MARINE,2025-12-30,2026-01-18,19,36502.53,-0.222,0.083,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500120,OPEN,POL-100002,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,AUTO,2026-01-31,2026-03-03,31,5683.14,-0.152,0.183,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500121,OPEN,POL-100537,Beta Risk Partners,BRK_BETA,Wayne Enterprises,MARINE,2025-11-02,2025-11-27,25,14038.65,-0.772,0.083,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500122,DENIED,POL-100568,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,AUTO,2026-08-22,2026-09-01,10,1843.44,-0.241,0.144,,Storm damage to roof tiles after severe weather warning.
+CLM-500123,APPROVED,POL-100451,Gamma Underwriting Co.,BRK_GAMMA,T. Müller,LIFE,2026-01-16,2026-02-10,25,3133.38,0.165,0.025,,"Slip and fall on business premises, minor injury claim."
+CLM-500124,PAID,POL-100766,Alpha Insurance Brokers,BRK_ALPHA,Globex,AUTO,2025-11-01,2025-11-18,17,176293.53,0.167,0.024,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500125,APPROVED,POL-100192,Gamma Underwriting Co.,BRK_GAMMA,T. Müller,AUTO,2025-10-17,2025-11-27,41,816.49,-0.831,0.18,,Windscreen cracked by road debris on the motorway.
+CLM-500126,IN_REVIEW,POL-100558,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,MARINE,2026-09-18,2026-10-16,28,23779.65,0.14,0.093,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500127,OPEN,POL-100667,Alpha Insurance Brokers,BRK_ALPHA,Globex,TRAVEL,2025-10-13,2025-10-30,17,108.02,-0.116,0.011,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500128,OPEN,POL-100404,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,AUTO,2026-04-06,2026-04-10,4,2968.12,-0.842,0.13,,Windscreen cracked by road debris on the motorway.
+CLM-500129,OPEN,POL-100374,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,TRAVEL,2026-07-20,2026-08-13,24,1163.96,0.074,0.076,,Theft of insured contents following forced entry overnight.
+CLM-500130,IN_REVIEW,POL-100143,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,LIFE,2025-09-16,2025-09-30,14,7886.92,-0.552,0.029,,Windscreen cracked by road debris on the motorway.
+CLM-500131,IN_REVIEW,POL-100711,Gamma Underwriting Co.,BRK_GAMMA,M. Brown,TRAVEL,2025-12-13,2026-01-19,37,105.92,0.027,0.003,,Windscreen cracked by road debris on the motorway.
+CLM-500132,IN_REVIEW,POL-100233,Beta Risk Partners,BRK_BETA,A. Patel,AUTO,2026-03-15,2026-04-10,26,1546.65,-0.158,0.004,,Storm damage to roof tiles after severe weather warning.
+CLM-500133,CLOSED,POL-100699,Alpha Insurance Brokers,BRK_ALPHA,A. Patel,COMMERCIAL,2025-11-04,2025-12-04,30,55323.96,-0.412,0.186,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500134,PAID,POL-100410,Alpha Insurance Brokers,BRK_ALPHA,Initech,TRAVEL,2025-06-24,2025-07-24,30,1401.63,0.164,0.063,,"Slip and fall on business premises, minor injury claim."
+CLM-500135,PAID,POL-100505,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,AUTO,2025-10-06,2025-11-04,29,3308.36,-0.201,0.068,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500136,OPEN,POL-100029,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,HEALTH,2026-05-05,2026-05-11,6,862.41,0.285,0.045,,Windscreen cracked by road debris on the motorway.
+CLM-500137,CLOSED,POL-100160,Gamma Underwriting Co.,BRK_GAMMA,Umbrella Ltd,MARINE,2026-03-15,2026-03-27,12,68493.82,0.376,0.097,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500138,PAID,POL-100492,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,AUTO,2025-08-10,2025-09-10,31,481.32,-0.187,0.105,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500139,APPROVED,POL-100536,Beta Risk Partners,BRK_BETA,K. Sato,MARINE,2025-10-25,2025-11-05,11,8640.82,-0.067,0.043,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500140,DENIED,POL-100197,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,HOME,2025-12-27,2026-01-17,21,4662.86,-0.189,0.027,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500141,PAID,POL-100748,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,HOME,2026-01-18,2026-01-30,12,4241.33,-0.78,0.124,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500142,OPEN,POL-100207,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,LIFE,2026-04-01,2026-05-06,35,2244.34,0.163,0.006,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500143,PAID,POL-100639,Alpha Insurance Brokers,BRK_ALPHA,Globex,AUTO,2025-06-20,2025-06-26,6,2360.89,-0.437,0.066,,Windscreen cracked by road debris on the motorway.
+CLM-500144,IN_REVIEW,POL-100574,Beta Risk Partners,BRK_BETA,Globex,HOME,2026-09-07,2026-10-05,28,4176.98,-0.635,0.055,,Windscreen cracked by road debris on the motorway.
+CLM-500145,IN_REVIEW,POL-100306,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,HOME,2026-01-02,2026-01-24,22,6362.54,-0.316,0.075,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500146,PAID,POL-100300,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,AUTO,2025-11-07,2025-12-09,32,3360.58,-0.802,0.01,,Theft of insured contents following forced entry overnight.
+CLM-500147,PAID,POL-100253,Beta Risk Partners,BRK_BETA,Globex,TRAVEL,2026-05-04,2026-06-15,42,265.64,-0.468,0.033,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500148,DENIED,POL-100014,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,COMMERCIAL,2026-01-26,2026-01-28,2,13873.97,-0.043,0.006,,Storm damage to roof tiles after severe weather warning.
+CLM-500149,OPEN,POL-100092,Gamma Underwriting Co.,BRK_GAMMA,Wayne Enterprises,HEALTH,2025-10-12,2025-11-23,42,16053.2,-0.895,0.009,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500150,IN_REVIEW,POL-100218,Alpha Insurance Brokers,BRK_ALPHA,Initech,MARINE,2025-11-16,2025-12-14,28,97428.21,-0.332,0.144,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500151,OPEN,POL-100062,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,MARINE,2025-08-03,2025-09-12,40,42472.97,-0.004,0.14,,Theft of insured contents following forced entry overnight.
+CLM-500152,IN_REVIEW,POL-100738,Beta Risk Partners,BRK_BETA,A. Patel,HEALTH,2025-12-05,2025-12-13,8,19452.7,-0.701,0.029,,"Slip and fall on business premises, minor injury claim."
+CLM-500153,PAID,POL-100788,Beta Risk Partners,BRK_BETA,Umbrella Ltd,AUTO,2025-12-22,2026-02-03,43,2406.69,0.177,0.129,,Windscreen cracked by road debris on the motorway.
+CLM-500154,OPEN,POL-100696,Gamma Underwriting Co.,BRK_GAMMA,P. Ivanov,TRAVEL,2025-12-26,2026-01-29,34,338.54,-0.303,0.034,,Storm damage to roof tiles after severe weather warning.
+CLM-500155,APPROVED,POL-100743,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,AUTO,2026-09-03,2026-10-15,42,7548.64,-0.341,0.127,,"Slip and fall on business premises, minor injury claim."
+CLM-500156,CLOSED,POL-100629,Beta Risk Partners,BRK_BETA,A. Patel,MARINE,2026-07-09,2026-07-13,4,12611.27,0.285,0.132,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500157,PAID,POL-100026,Alpha Insurance Brokers,BRK_ALPHA,Globex,TRAVEL,2026-01-06,2026-02-15,40,524.49,-0.058,0.16,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500158,OPEN,POL-100008,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,TRAVEL,2025-09-22,2025-10-22,30,500.18,-0.829,0.116,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500159,CLOSED,POL-100768,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,HOME,2026-02-09,2026-02-17,8,1275.67,-0.761,0.023,,"Slip and fall on business premises, minor injury claim."
+CLM-500160,IN_REVIEW,POL-100174,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,HEALTH,2025-06-01,2025-07-15,44,14177.07,-0.892,0.194,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500161,OPEN,POL-100366,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,AUTO,2026-08-04,2026-08-25,21,6002.04,-0.748,0.046,,Windscreen cracked by road debris on the motorway.
+CLM-500162,OPEN,POL-100589,Beta Risk Partners,BRK_BETA,K. Sato,COMMERCIAL,2025-12-07,2025-12-12,5,23788.99,-0.348,0.027,,Storm damage to roof tiles after severe weather warning.
+CLM-500163,OPEN,POL-100281,Beta Risk Partners,BRK_BETA,Stark Industries,TRAVEL,2026-03-21,2026-03-23,2,563.76,0.377,0.001,,Windscreen cracked by road debris on the motorway.
+CLM-500164,IN_REVIEW,POL-100795,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,COMMERCIAL,2026-02-14,2026-02-14,0,29234.12,-0.368,0.159,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500165,IN_REVIEW,POL-100165,Beta Risk Partners,BRK_BETA,Initech,HEALTH,2025-12-09,2026-01-11,33,18661.93,-0.497,0.027,,"Slip and fall on business premises, minor injury claim."
+CLM-500166,PAID,POL-100691,Alpha Insurance Brokers,BRK_ALPHA,Globex,HEALTH,2025-05-31,2025-07-02,32,10167.57,-0.17,0.038,,Storm damage to roof tiles after severe weather warning.
+CLM-500167,APPROVED,POL-100148,Beta Risk Partners,BRK_BETA,R. Okoro,MARINE,2026-08-20,2026-10-03,44,53449.78,-0.462,0.154,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500168,OPEN,POL-100227,Gamma Underwriting Co.,BRK_GAMMA,Initech,AUTO,2026-04-30,2026-05-07,7,8946.05,-0.238,0.195,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500169,IN_REVIEW,POL-100408,Gamma Underwriting Co.,BRK_GAMMA,A. Patel,HEALTH,2025-12-02,2025-12-02,0,6866.3,-0.463,0.013,,"Slip and fall on business premises, minor injury claim."
+CLM-500170,APPROVED,POL-100457,Beta Risk Partners,BRK_BETA,P. Ivanov,HEALTH,2026-08-12,2026-08-27,15,25718.4,0.368,0.016,,Storm damage to roof tiles after severe weather warning.
+CLM-500171,OPEN,POL-100392,Beta Risk Partners,BRK_BETA,Globex,LIFE,2025-08-05,2025-08-14,9,7564.73,-0.477,0.141,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500172,IN_REVIEW,POL-100100,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,HEALTH,2025-11-16,2025-11-29,13,13900.5,0.376,0.019,,Theft of insured contents following forced entry overnight.
+CLM-500173,OPEN,POL-100680,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,LIFE,2025-07-19,2025-07-26,7,3699.84,-0.348,0.016,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500174,PAID,POL-100695,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,HOME,2026-08-09,2026-08-09,0,5085.56,-0.493,0.221,,Windscreen cracked by road debris on the motorway.
+CLM-500175,OPEN,POL-100637,Alpha Insurance Brokers,BRK_ALPHA,Acme Corp,AUTO,2025-06-18,2025-07-01,13,2624.04,-0.371,0.056,,Theft of insured contents following forced entry overnight.
+CLM-500176,IN_REVIEW,POL-100415,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,HOME,2026-07-05,2026-08-11,37,1545.92,0.286,0.013,,"Slip and fall on business premises, minor injury claim."
+CLM-500177,OPEN,POL-100474,Beta Risk Partners,BRK_BETA,Stark Industries,COMMERCIAL,2025-09-09,2025-09-13,4,41915.81,-0.184,0.08,,Storm damage to roof tiles after severe weather warning.
+CLM-500178,DENIED,POL-100309,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,TRAVEL,2025-09-06,2025-10-12,36,295.72,-0.537,0.005,,"Slip and fall on business premises, minor injury claim."
+CLM-500179,OPEN,POL-100530,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,COMMERCIAL,2026-01-01,2026-02-04,34,27387.01,0.384,0.12,,"Slip and fall on business premises, minor injury claim."
+CLM-500180,CLOSED,POL-100199,Alpha Insurance Brokers,BRK_ALPHA,Globex,TRAVEL,2025-08-19,2025-09-17,29,1408.7,0.312,0.177,,"Slip and fall on business premises, minor injury claim."
+CLM-500181,IN_REVIEW,POL-100679,Alpha Insurance Brokers,BRK_ALPHA,Acme Corp,MARINE,2025-08-17,2025-09-03,17,22999.97,-0.254,0.079,,Theft of insured contents following forced entry overnight.
+CLM-500182,IN_REVIEW,POL-100465,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,MARINE,2025-03-03,2025-03-15,12,30579.01,-0.284,0.09,,Storm damage to roof tiles after severe weather warning.
+CLM-500183,DENIED,POL-100552,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,AUTO,2025-09-04,2025-09-14,10,2719.29,0.27,0.054,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500184,PAID,POL-100044,Alpha Insurance Brokers,BRK_ALPHA,Acme Corp,HOME,2025-10-01,2025-11-09,39,3198.72,-0.501,0.007,,Storm damage to roof tiles after severe weather warning.
+CLM-500185,OPEN,POL-100564,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,HEALTH,2025-08-15,2025-09-15,31,8876.77,0.35,0.122,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500186,OPEN,POL-100090,Beta Risk Partners,BRK_BETA,A. Patel,HEALTH,2025-07-12,2025-07-30,18,15289.67,-0.749,0.083,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500187,OPEN,POL-100236,Beta Risk Partners,BRK_BETA,T. Müller,LIFE,2025-10-22,2025-11-25,34,5031.0,-0.32,0.008,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500188,PAID,POL-100268,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,AUTO,2026-03-26,2026-04-13,18,2776.89,0.337,0.08,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500189,IN_REVIEW,POL-100409,Gamma Underwriting Co.,BRK_GAMMA,Acme Corp,COMMERCIAL,2025-12-05,2025-12-17,12,16310.43,0.044,0.085,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500190,PAID,POL-100124,Alpha Insurance Brokers,BRK_ALPHA,Acme Corp,COMMERCIAL,2026-03-05,2026-04-10,36,46944.64,0.393,0.077,,Theft of insured contents following forced entry overnight.
+CLM-500191,PAID,POL-100251,Gamma Underwriting Co.,BRK_GAMMA,A. Patel,AUTO,2025-06-18,2025-07-29,41,1073.0,-0.254,0.088,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500192,OPEN,POL-100466,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,HEALTH,2025-08-23,2025-09-05,13,14724.09,-0.394,0.02,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500193,IN_REVIEW,POL-100767,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,AUTO,2025-10-16,2025-10-31,15,4447.93,-0.641,0.015,,Storm damage to roof tiles after severe weather warning.
+CLM-500194,DENIED,POL-100000,Alpha Insurance Brokers,BRK_ALPHA,A. Patel,COMMERCIAL,2025-09-01,2025-09-22,21,10437.5,0.244,0.169,,Storm damage to roof tiles after severe weather warning.
+CLM-500195,IN_REVIEW,POL-100793,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,HOME,2025-09-28,2025-11-07,40,2083.55,0.331,0.035,,Storm damage to roof tiles after severe weather warning.
+CLM-500196,IN_REVIEW,POL-100206,Gamma Underwriting Co.,BRK_GAMMA,Globex,AUTO,2026-05-12,2026-06-23,42,1775.81,-0.563,0.072,,Windscreen cracked by road debris on the motorway.
+CLM-500197,IN_REVIEW,POL-100349,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,MARINE,2026-02-17,2026-03-13,24,42929.58,0.371,0.038,,Storm damage to roof tiles after severe weather warning.
+CLM-500198,DENIED,POL-100303,Beta Risk Partners,BRK_BETA,L. Nguyen,LIFE,2025-08-14,2025-08-22,8,8447.62,-0.297,0.038,,Storm damage to roof tiles after severe weather warning.
+CLM-500199,OPEN,POL-100433,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,HOME,2026-09-03,2026-09-20,17,3895.75,-0.67,0.134,,Storm damage to roof tiles after severe weather warning.
+CLM-500200,OPEN,POL-100144,Gamma Underwriting Co.,BRK_GAMMA,Acme Corp,HOME,2026-05-12,2026-05-12,0,4242.37,-0.524,0.023,,Windscreen cracked by road debris on the motorway.
+CLM-500201,IN_REVIEW,POL-100263,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,TRAVEL,2026-07-02,2026-07-22,20,187.82,0.274,0.14,,Storm damage to roof tiles after severe weather warning.
+CLM-500202,APPROVED,POL-100005,Beta Risk Partners,BRK_BETA,R. Okoro,HEALTH,2025-06-05,2025-07-11,36,5568.29,-0.445,0.005,,Theft of insured contents following forced entry overnight.
+CLM-500203,PAID,POL-100650,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,AUTO,2026-03-19,2026-04-08,20,3219.64,-0.514,0.153,,Storm damage to roof tiles after severe weather warning.
+CLM-500204,OPEN,POL-100602,Beta Risk Partners,BRK_BETA,J. Smith,HEALTH,2025-12-13,2025-12-17,4,16048.41,-0.635,0.069,,Theft of insured contents following forced entry overnight.
+CLM-500205,OPEN,POL-100260,Beta Risk Partners,BRK_BETA,Umbrella Ltd,HOME,2025-12-29,2025-12-30,1,5283.97,-0.226,0.116,,Storm damage to roof tiles after severe weather warning.
+CLM-500206,APPROVED,POL-100327,Beta Risk Partners,BRK_BETA,Wayne Enterprises,COMMERCIAL,2026-08-01,2026-08-09,8,36206.48,-0.045,0.129,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500207,OPEN,POL-100753,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,MARINE,2026-03-03,2026-03-10,7,71078.07,-0.85,0.048,,Windscreen cracked by road debris on the motorway.
+CLM-500208,PAID,POL-100631,Beta Risk Partners,BRK_BETA,R. Okoro,HOME,2025-08-19,2025-09-01,13,1658.43,-0.261,0.008,,Windscreen cracked by road debris on the motorway.
+CLM-500209,IN_REVIEW,POL-100542,Beta Risk Partners,BRK_BETA,K. Sato,AUTO,2025-10-02,2025-11-07,36,2868.18,0.142,0.191,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500210,DENIED,POL-100061,Beta Risk Partners,BRK_BETA,Initech,HOME,2025-10-31,2025-11-02,2,4081.98,0.343,0.251,,Windscreen cracked by road debris on the motorway.
+CLM-500211,IN_REVIEW,POL-100247,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,LIFE,2026-04-18,2026-06-01,44,2139.18,-0.566,0.038,,Windscreen cracked by road debris on the motorway.
+CLM-500212,APPROVED,POL-100205,Beta Risk Partners,BRK_BETA,Globex,TRAVEL,2025-08-07,2025-08-31,24,425.76,0.252,0.037,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500213,APPROVED,POL-100336,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,TRAVEL,2025-07-27,2025-09-04,39,713.0,-0.841,0.044,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500214,CLOSED,POL-100482,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,AUTO,2026-01-20,2026-02-28,39,8922.84,-0.638,0.049,,Storm damage to roof tiles after severe weather warning.
+CLM-500215,IN_REVIEW,POL-100315,Beta Risk Partners,BRK_BETA,Stark Industries,LIFE,2025-06-20,2025-07-03,13,131875.17,-0.601,0.136,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500216,PAID,POL-100354,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,LIFE,2025-11-30,2025-12-10,10,7758.87,-0.09,0.045,,Storm damage to roof tiles after severe weather warning.
+CLM-500217,DENIED,POL-100293,Alpha Insurance Brokers,BRK_ALPHA,Initech,AUTO,2025-10-24,2025-11-21,28,4713.18,-0.152,0.183,,Storm damage to roof tiles after severe weather warning.
+CLM-500218,OPEN,POL-100111,Beta Risk Partners,BRK_BETA,Stark Industries,TRAVEL,2026-04-14,2026-05-04,20,4897.01,-0.727,0.249,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500219,APPROVED,POL-100321,Beta Risk Partners,BRK_BETA,Globex,HEALTH,2025-06-15,2025-06-23,8,8673.39,-0.517,0.077,,Windscreen cracked by road debris on the motorway.
+CLM-500220,PAID,POL-100421,Beta Risk Partners,BRK_BETA,S. Haddad,HOME,2026-06-03,2026-07-17,44,3888.45,-0.175,0.214,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500221,CLOSED,POL-100330,Beta Risk Partners,BRK_BETA,Wayne Enterprises,AUTO,2025-10-03,2025-10-04,1,3426.17,-0.214,0.098,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500222,PAID,POL-100677,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,MARINE,2025-04-08,2025-05-22,44,48583.98,0.316,0.131,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500223,PAID,POL-100726,Beta Risk Partners,BRK_BETA,A. Patel,COMMERCIAL,2025-11-25,2025-12-07,12,924802.0,-0.283,0.054,,Storm damage to roof tiles after severe weather warning.
+CLM-500224,PAID,POL-100164,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,AUTO,2025-07-21,2025-07-25,4,5529.08,-0.479,0.056,,Storm damage to roof tiles after severe weather warning.
+CLM-500225,OPEN,POL-100527,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,COMMERCIAL,2025-05-10,2025-05-28,18,13599.1,0.332,0.005,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500226,OPEN,POL-100735,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,AUTO,2025-07-19,2025-08-20,32,3354.06,0.398,0.048,,Storm damage to roof tiles after severe weather warning.
+CLM-500227,PAID,POL-100720,Beta Risk Partners,BRK_BETA,K. Sato,HEALTH,2025-09-22,2025-10-01,9,13648.05,0.389,0.025,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500228,APPROVED,POL-100597,Alpha Insurance Brokers,BRK_ALPHA,Initech,HEALTH,2025-11-06,2025-12-16,40,8419.22,-0.53,0.154,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500229,CLOSED,POL-100799,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,TRAVEL,2025-11-18,2025-12-01,13,1171.96,-0.26,0.115,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500230,APPROVED,POL-100060,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,MARINE,2025-11-28,2025-12-25,27,89585.09,0.324,0.061,,"Slip and fall on business premises, minor injury claim."
+CLM-500231,OPEN,POL-100153,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,HOME,2026-05-29,2026-06-22,24,657.49,0.059,0.113,,"Slip and fall on business premises, minor injury claim."
+CLM-500232,OPEN,POL-100425,Beta Risk Partners,BRK_BETA,Stark Industries,HOME,2026-02-23,2026-04-05,41,3936.54,-0.573,0.176,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500233,PAID,POL-100672,Alpha Insurance Brokers,BRK_ALPHA,A. Patel,COMMERCIAL,2025-10-26,2025-11-21,26,6471.24,-0.682,0.008,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500234,CLOSED,POL-100322,Gamma Underwriting Co.,BRK_GAMMA,A. Patel,HOME,2026-03-27,2026-05-10,44,1577.15,-0.218,0.144,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500235,DENIED,POL-100283,Beta Risk Partners,BRK_BETA,R. Okoro,LIFE,2025-04-24,2025-06-02,39,2903.07,-0.817,0.004,,Theft of insured contents following forced entry overnight.
+CLM-500236,OPEN,POL-100379,Gamma Underwriting Co.,BRK_GAMMA,Wayne Enterprises,LIFE,2025-05-18,2025-06-27,40,3907.31,0.313,0.081,,"Slip and fall on business premises, minor injury claim."
+CLM-500237,CLOSED,POL-100506,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,AUTO,2026-07-24,2026-07-30,6,713.34,-0.744,0.143,,Theft of insured contents following forced entry overnight.
+CLM-500238,IN_REVIEW,POL-100024,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,HOME,2026-07-17,2026-08-26,40,1582.14,0.207,0.108,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500239,PAID,POL-100338,Gamma Underwriting Co.,BRK_GAMMA,Globex,TRAVEL,2025-09-23,2025-10-09,16,173.57,-0.432,0.034,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500240,DENIED,POL-100584,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,LIFE,2026-09-19,2026-10-22,33,1193.51,0.242,0.004,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500241,DENIED,POL-100275,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,COMMERCIAL,2025-11-03,2025-11-26,23,16751.43,-0.339,0.028,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500242,PAID,POL-100585,Gamma Underwriting Co.,BRK_GAMMA,J. Smith,MARINE,2026-05-15,2026-06-01,17,53499.93,-0.64,0.077,,"Slip and fall on business premises, minor injury claim."
+CLM-500243,CLOSED,POL-100576,Gamma Underwriting Co.,BRK_GAMMA,A. Patel,LIFE,2026-04-07,2026-04-10,3,10923.13,-0.643,0.015,,"Slip and fall on business premises, minor injury claim."
+CLM-500244,PAID,POL-100452,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,HEALTH,2025-05-07,2025-05-10,3,19203.04,0.059,0.129,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500245,CLOSED,POL-100504,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,LIFE,2026-03-17,2026-03-25,8,498823.49,-0.879,0.054,,Theft of insured contents following forced entry overnight.
+CLM-500246,OPEN,POL-100358,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,MARINE,2026-03-04,2026-03-28,24,78218.34,-0.449,0.017,,Windscreen cracked by road debris on the motorway.
+CLM-500247,CLOSED,POL-100662,Beta Risk Partners,BRK_BETA,L. Nguyen,COMMERCIAL,2025-11-27,2025-12-05,8,4253.41,-0.533,0.025,,Windscreen cracked by road debris on the motorway.
+CLM-500248,APPROVED,POL-100763,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,HEALTH,2025-08-02,2025-08-24,22,13147.88,-0.3,0.161,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500249,IN_REVIEW,POL-100715,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,HEALTH,2026-04-28,2026-05-22,24,266861.2,-0.363,0.104,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500250,CLOSED,POL-100154,Beta Risk Partners,BRK_BETA,Umbrella Ltd,AUTO,2025-08-12,2025-08-21,9,5000.79,-0.655,0.013,,Storm damage to roof tiles after severe weather warning.
+CLM-500251,APPROVED,POL-100279,Alpha Insurance Brokers,BRK_ALPHA,Globex,TRAVEL,2025-10-07,2025-11-08,32,573.28,-0.305,0.024,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500252,OPEN,POL-100426,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,TRAVEL,2026-01-12,2026-02-14,33,53.91,0.119,0.225,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500253,PAID,POL-100447,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,HEALTH,2025-11-03,2025-11-22,19,11036.46,-0.829,0.111,,Theft of insured contents following forced entry overnight.
+CLM-500254,OPEN,POL-100615,Beta Risk Partners,BRK_BETA,Stark Industries,LIFE,2025-08-15,2025-09-25,41,12863.02,-0.514,0.041,,Theft of insured contents following forced entry overnight.
+CLM-500255,DENIED,POL-100622,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,MARINE,2025-09-05,2025-09-24,19,48420.97,0.064,0.156,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500256,CLOSED,POL-100126,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,LIFE,2026-09-06,2026-09-27,21,3914.18,0.009,0.18,,Storm damage to roof tiles after severe weather warning.
+CLM-500257,PAID,POL-100431,Beta Risk Partners,BRK_BETA,A. Patel,HOME,2026-04-06,2026-04-23,17,490.57,0.019,0.12,,"Slip and fall on business premises, minor injury claim."
+CLM-500258,CLOSED,POL-100130,Beta Risk Partners,BRK_BETA,Globex,HEALTH,2025-07-13,2025-08-21,39,398745.36,0.187,0.113,,"Slip and fall on business premises, minor injury claim."
+CLM-500259,CLOSED,POL-100535,Beta Risk Partners,BRK_BETA,J. Smith,AUTO,2026-01-16,2026-02-23,38,2406.88,-0.756,0.182,,Storm damage to roof tiles after severe weather warning.
+CLM-500260,IN_REVIEW,POL-100741,Gamma Underwriting Co.,BRK_GAMMA,Acme Corp,LIFE,2025-10-24,2025-11-21,28,6937.44,-0.323,0.086,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500261,OPEN,POL-100036,Gamma Underwriting Co.,BRK_GAMMA,Stark Industries,HOME,2025-08-28,2025-09-22,25,2625.53,0.039,0.092,,Storm damage to roof tiles after severe weather warning.
+CLM-500262,CLOSED,POL-100200,Beta Risk Partners,BRK_BETA,Stark Industries,COMMERCIAL,2025-06-28,2025-08-11,44,16904.22,-0.191,0.235,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500263,OPEN,POL-100582,Beta Risk Partners,BRK_BETA,A. Patel,HEALTH,2025-09-27,2025-10-22,25,17433.58,-0.287,0.069,,Windscreen cracked by road debris on the motorway.
+CLM-500264,CLOSED,POL-100155,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,MARINE,2025-12-20,2026-01-16,27,66486.75,-0.284,0.13,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500265,APPROVED,POL-100773,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,HOME,2025-03-26,2025-05-06,41,1337.71,0.345,0.055,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500266,IN_REVIEW,POL-100078,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,AUTO,2026-06-20,2026-07-27,37,1352.88,0.054,0.223,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500267,APPROVED,POL-100329,Beta Risk Partners,BRK_BETA,Globex,LIFE,2026-07-26,2026-09-05,41,5195.02,-0.839,0.006,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500268,PAID,POL-100710,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,HOME,2025-07-20,2025-08-04,15,735.63,-0.746,0.061,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500269,OPEN,POL-100427,Beta Risk Partners,BRK_BETA,P. Ivanov,LIFE,2026-01-20,2026-02-05,16,4842.16,-0.241,0.088,,Theft of insured contents following forced entry overnight.
+CLM-500270,OPEN,POL-100638,Beta Risk Partners,BRK_BETA,Umbrella Ltd,AUTO,2026-01-30,2026-02-04,5,1958.61,-0.719,0.124,,Theft of insured contents following forced entry overnight.
+CLM-500271,IN_REVIEW,POL-100177,Alpha Insurance Brokers,BRK_ALPHA,Globex,HEALTH,2025-05-16,2025-06-13,28,17566.59,-0.238,0.254,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500272,PAID,POL-100285,Gamma Underwriting Co.,BRK_GAMMA,Initech,AUTO,2025-08-06,2025-08-23,17,1578.03,-0.792,0.01,,Theft of insured contents following forced entry overnight.
+CLM-500273,PAID,POL-100031,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,COMMERCIAL,2026-01-17,2026-01-25,8,64784.3,0.117,0.082,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500274,DENIED,POL-100059,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,LIFE,2025-09-22,2025-10-22,30,5209.11,0.019,0.133,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500275,DENIED,POL-100448,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,MARINE,2025-09-22,2025-09-23,1,25455.51,-0.522,0.015,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500276,APPROVED,POL-100661,Gamma Underwriting Co.,BRK_GAMMA,Wayne Enterprises,LIFE,2026-02-20,2026-03-12,20,10331.97,0.126,0.052,,"Slip and fall on business premises, minor injury claim."
+CLM-500277,IN_REVIEW,POL-100021,Beta Risk Partners,BRK_BETA,Initech,MARINE,2025-04-29,2025-05-14,15,81684.2,0.356,0.105,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500278,CLOSED,POL-100721,Alpha Insurance Brokers,BRK_ALPHA,Stark Industries,TRAVEL,2026-06-14,2026-07-13,29,643.08,0.299,0.184,,"Slip and fall on business premises, minor injury claim."
+CLM-500279,OPEN,POL-100732,Beta Risk Partners,BRK_BETA,Umbrella Ltd,TRAVEL,2026-03-07,2026-03-21,14,435.58,-0.702,0.086,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500280,OPEN,POL-100225,Beta Risk Partners,BRK_BETA,Stark Industries,TRAVEL,2026-03-16,2026-04-07,22,1527.29,-0.63,0.002,,Windscreen cracked by road debris on the motorway.
+CLM-500281,DENIED,POL-100723,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,HOME,2025-04-24,2025-06-03,40,60611.15,-0.036,0.429,,Storm damage to roof tiles after severe weather warning.
+CLM-500282,APPROVED,POL-100317,Beta Risk Partners,BRK_BETA,T. Müller,HOME,2025-10-16,2025-11-29,44,3099.45,-0.222,0.019,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500283,OPEN,POL-100422,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,HOME,2026-04-07,2026-05-18,41,731.74,-0.748,0.027,,Windscreen cracked by road debris on the motorway.
+CLM-500284,APPROVED,POL-100513,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,LIFE,2026-04-01,2026-04-07,6,5848.55,0.362,0.065,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500285,OPEN,POL-100485,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,MARINE,2025-06-14,2025-07-06,22,31383.6,0.193,0.048,,"Slip and fall on business premises, minor injury claim."
+CLM-500286,IN_REVIEW,POL-100782,Alpha Insurance Brokers,BRK_ALPHA,Initech,AUTO,2026-06-15,2026-06-20,5,5526.0,-0.205,0.092,,Theft of insured contents following forced entry overnight.
+CLM-500287,OPEN,POL-100525,Beta Risk Partners,BRK_BETA,A. Patel,HEALTH,2026-04-27,2026-05-01,4,5698.73,0.388,0.029,,Theft of insured contents following forced entry overnight.
+CLM-500288,IN_REVIEW,POL-100790,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,LIFE,2025-10-24,2025-10-27,3,2705.65,0.282,0.259,,Windscreen cracked by road debris on the motorway.
+CLM-500289,APPROVED,POL-100747,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,HEALTH,2026-01-29,2026-03-07,37,3331.83,-0.675,0.035,,"Slip and fall on business premises, minor injury claim."
+CLM-500290,APPROVED,POL-100468,Alpha Insurance Brokers,BRK_ALPHA,S. Haddad,TRAVEL,2026-01-23,2026-02-09,17,873.71,0.373,0.076,,Storm damage to roof tiles after severe weather warning.
+CLM-500291,APPROVED,POL-100731,Gamma Underwriting Co.,BRK_GAMMA,R. Okoro,LIFE,2026-01-12,2026-01-12,0,6074.18,-0.515,0.161,,"Slip and fall on business premises, minor injury claim."
+CLM-500292,IN_REVIEW,POL-100084,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,AUTO,2026-07-26,2026-08-28,33,5298.02,-0.336,0.072,,Theft of insured contents following forced entry overnight.
+CLM-500293,APPROVED,POL-100570,Alpha Insurance Brokers,BRK_ALPHA,R. Okoro,MARINE,2025-06-21,2025-07-27,36,17847.42,0.116,0.056,,Storm damage to roof tiles after severe weather warning.
+CLM-500294,APPROVED,POL-100053,Beta Risk Partners,BRK_BETA,Globex,HOME,2025-10-03,2025-11-07,35,5832.77,-0.829,0.179,,Theft of insured contents following forced entry overnight.
+CLM-500295,PAID,POL-100675,Alpha Insurance Brokers,BRK_ALPHA,T. Müller,HEALTH,2026-08-06,2026-09-15,40,8016.9,0.329,0.026,,"Slip and fall on business premises, minor injury claim."
+CLM-500296,APPROVED,POL-100713,Beta Risk Partners,BRK_BETA,T. Müller,LIFE,2026-03-10,2026-04-01,22,8284.64,0.158,0.015,,Storm damage to roof tiles after severe weather warning.
+CLM-500297,CLOSED,POL-100115,Gamma Underwriting Co.,BRK_GAMMA,Initech,LIFE,2025-09-16,2025-10-21,35,10566.62,0.361,0.02,,Total loss after garage fire; vehicle beyond economic repair.
+CLM-500298,APPROVED,POL-100255,Alpha Insurance Brokers,BRK_ALPHA,P. Ivanov,COMMERCIAL,2025-11-18,2025-11-26,8,10807.64,0.303,0.032,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500299,APPROVED,POL-100128,Alpha Insurance Brokers,BRK_ALPHA,M. Brown,HOME,2025-11-08,2025-11-30,22,4922.19,-0.525,0.262,,Storm damage to roof tiles after severe weather warning.
+CLM-500300,APPROVED,POL-100331,Beta Risk Partners,BRK_BETA,M. Brown,AUTO,2026-02-28,2026-03-02,2,7293.19,-0.374,0.005,,Windscreen cracked by road debris on the motorway.
+CLM-500301,PAID,POL-100429,Alpha Insurance Brokers,BRK_ALPHA,K. Sato,AUTO,2025-09-12,2025-10-16,34,1880.32,-0.31,0.143,,Storm damage to roof tiles after severe weather warning.
+CLM-500302,APPROVED,POL-100590,Alpha Insurance Brokers,BRK_ALPHA,Wayne Enterprises,COMMERCIAL,2026-07-21,2026-08-06,16,25865.58,-0.897,0.038,,Theft of insured contents following forced entry overnight.
+CLM-500303,APPROVED,POL-100122,Gamma Underwriting Co.,BRK_GAMMA,L. Nguyen,COMMERCIAL,2025-11-30,2025-12-07,7,30877.95,-0.006,0.015,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500304,PAID,POL-100280,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,TRAVEL,2026-03-28,2026-04-21,24,495.48,-0.899,0.033,,Theft of insured contents following forced entry overnight.
+CLM-500305,APPROVED,POL-100647,Alpha Insurance Brokers,BRK_ALPHA,Umbrella Ltd,TRAVEL,2025-03-27,2025-04-26,30,551.63,-0.515,0.074,,Theft of insured contents following forced entry overnight.
+CLM-500306,PAID,POL-100086,Alpha Insurance Brokers,BRK_ALPHA,Globex,AUTO,2026-03-12,2026-03-20,8,6628.28,-0.309,0.064,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500307,APPROVED,POL-100050,Gamma Underwriting Co.,BRK_GAMMA,Umbrella Ltd,MARINE,2026-08-23,2026-09-18,26,61820.22,-0.663,0.06,,"Slip and fall on business premises, minor injury claim."
+CLM-500308,OPEN,POL-100798,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,TRAVEL,2026-04-18,2026-05-07,19,785.76,0.128,0.131,,Theft of insured contents following forced entry overnight.
+CLM-500309,OPEN,POL-100133,Gamma Underwriting Co.,BRK_GAMMA,T. Müller,AUTO,2025-06-18,2025-07-16,28,7041.14,-0.162,0.04,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500310,APPROVED,POL-100193,Alpha Insurance Brokers,BRK_ALPHA,Globex,HEALTH,2025-08-22,2025-09-10,19,11550.43,-0.151,0.049,,Windscreen cracked by road debris on the motorway.
+CLM-500311,IN_REVIEW,POL-100549,Alpha Insurance Brokers,BRK_ALPHA,Initech,HEALTH,2025-07-10,2025-08-19,40,6700.42,-0.097,0.111,,Storm damage to roof tiles after severe weather warning.
+CLM-500312,DENIED,POL-100437,Alpha Insurance Brokers,BRK_ALPHA,J. Smith,TRAVEL,2026-01-28,2026-02-24,27,1020.06,-0.255,0.019,,Windscreen cracked by road debris on the motorway.
+CLM-500313,OPEN,POL-100509,Gamma Underwriting Co.,BRK_GAMMA,T. Müller,TRAVEL,2026-04-30,2026-05-04,4,95.87,-0.111,0.058,,"Vehicle rear-ended at traffic lights, moderate bumper damage."
+CLM-500314,CLOSED,POL-100591,Gamma Underwriting Co.,BRK_GAMMA,K. Sato,HEALTH,2026-06-07,2026-07-06,29,5647.24,-0.094,0.14,,Theft of insured contents following forced entry overnight.
+CLM-500315,CLOSED,POL-100204,Gamma Underwriting Co.,BRK_GAMMA,S. Haddad,COMMERCIAL,2025-11-30,2025-12-02,2,13192.23,-0.618,0.015,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500316,PAID,POL-100042,Gamma Underwriting Co.,BRK_GAMMA,Umbrella Ltd,AUTO,2025-04-28,2025-05-18,20,8229.77,-0.718,0.004,,Water ingress from burst pipe damaged ground-floor flooring.
+CLM-500317,APPROVED,POL-100791,Alpha Insurance Brokers,BRK_ALPHA,Globex,TRAVEL,2025-08-18,2025-09-27,40,47.89,-0.334,0.022,,Theft of insured contents following forced entry overnight.
+CLM-500318,IN_REVIEW,POL-100186,Alpha Insurance Brokers,BRK_ALPHA,L. Nguyen,HOME,2025-09-22,2025-10-04,12,4097.83,0.283,0.078,,"Slip and fall on business premises, minor injury claim."
+CLM-500319,IN_REVIEW,POL-100739,Alpha Insurance Brokers,BRK_ALPHA,A. Patel,HOME,2025-09-10,2025-09-29,19,1657.36,0.384,0.031,,Storm damage to roof tiles after severe weather warning.
