@@ -1,0 +1,79 @@
+# Auto-deploy the Streamlit dashboard to Hugging Face Spaces on every push to main.
+#
+# One-time setup in your GitHub repo:
+#   Settings → Secrets and variables → Actions
+#     • Secret   HF_TOKEN     = a Hugging Face WRITE token
+#                               (https://huggingface.co/settings/tokens)
+#     • Variable HF_SPACE_ID  = <your-hf-username>/snowflake-cortexai-mapper
+#
+# After that, every push to main rebuilds the Space. You can also run it manually
+# from the Actions tab (workflow_dispatch) and override the Space id.
+name: Deploy to Hugging Face Spaces
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      space_id:
+        description: "HF Space id (username/space). Overrides the HF_SPACE_ID variable."
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Resolve Space id
+        id: cfg
+        run: |
+          SPACE_ID="${{ github.event.inputs.space_id || vars.HF_SPACE_ID }}"
+          if [ -z "$SPACE_ID" ]; then
+            echo "::error::Set repo variable HF_SPACE_ID (e.g. your-username/snowflake-cortexai-mapper) or pass space_id when dispatching."
+            exit 1
+          fi
+          echo "space_id=$SPACE_ID" >> "$GITHUB_OUTPUT"
+          echo "hf_user=${SPACE_ID%%/*}" >> "$GITHUB_OUTPUT"
+
+      - name: Ensure the Space exists
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then echo "::error::Add the HF_TOKEN repo secret."; exit 1; fi
+          pip install -q huggingface_hub
+          python - <<'PY'
+          import os
+          from huggingface_hub import create_repo
+          create_repo("${{ steps.cfg.outputs.space_id }}", repo_type="space",
+                      space_sdk="streamlit", token=os.environ["HF_TOKEN"], exist_ok=True)
+          print("Space ready")
+          PY
+
+      - name: Build Space copy (prepend HF metadata to README) and push
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          SPACE_ID: ${{ steps.cfg.outputs.space_id }}
+          HF_USER: ${{ steps.cfg.outputs.hf_user }}
+        run: |
+          WORK="$(mktemp -d)"
+          git archive --format=tar HEAD | tar -x -C "$WORK"
+          cat deploy/huggingface/space_metadata.md README.md > "$WORK/README.md"
+          cd "$WORK"
+          git init -q && git checkout -q -b main
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A && git commit -q -m "Sync from GitHub @ ${GITHUB_SHA::7}"
+          git push -q --force "https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${SPACE_ID}" main
+          echo "Deployed → https://huggingface.co/spaces/${SPACE_ID}"

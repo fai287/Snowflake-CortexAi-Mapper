@@ -141,6 +141,33 @@ the full Cortex NL→SQL agent activates automatically when Snowflake creds are 
 
 ---
 
+## 🤗 Deploy the dashboard (Hugging Face Spaces — config-driven)
+
+Unlike Streamlit Cloud, this path needs **no interactive login** — just a write
+token. Two ways:
+
+**A) One command (local):**
+```bash
+export HF_TOKEN=hf_xxx                       # https://huggingface.co/settings/tokens (WRITE)
+./scripts/deploy_huggingface.sh <your-hf-username>/snowflake-cortexai-mapper
+# → https://huggingface.co/spaces/<your-hf-username>/snowflake-cortexai-mapper
+```
+It creates the Space (Streamlit SDK), prepends the HF metadata header to a copy
+of the README, and pushes — HF builds and serves it automatically on the
+committed sample data.
+
+**B) Auto-deploy on every push (GitHub Action):** `.github/workflows/deploy-huggingface.yml`
+is already in the repo. In GitHub → **Settings → Secrets and variables → Actions**:
+- add secret **`HF_TOKEN`** (a Hugging Face write token)
+- add variable **`HF_SPACE_ID`** = `<your-hf-username>/snowflake-cortexai-mapper`
+
+Every push to `main` then rebuilds the Space (or run it manually from the Actions tab).
+
+> The GitHub README stays clean — the required HF YAML front-matter
+> (`deploy/huggingface/space_metadata.md`) is injected only into the Space copy.
+
+---
+
 ## 🚀 Full platform (live Kafka → Snowpipe Streaming → Snowflake → Cortex)
 
 > Full instructions: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)
